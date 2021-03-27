@@ -1,6 +1,14 @@
 # vuegg_lite
 > 一个 [vuegg](https://github.com/vuegg/vuegg) 精简版的库，不是来自官方的，也不会再维护这个库，主要目的就是为了方便学习，去除node后台代码、page页面管理，只保留纯粹的拖拽生成页面等核心功能，优化了代码目录结构，更贴近可插拔式。
 
+
+## 注意：需要手动修正 vue-mdc-adapter 依赖包源码错误
+```javascript
+// vuegg_lite\node_modules\vue-mdc-adapter\dist\index.js  823行
+export { VueMDCChipSet }
+```
+
+
 <p align="center">
   <a href="https://vuegg.github.io/" target="_blank">
     <img width="180" src="https://vuegg.github.io/static/vuegg-fam.svg">
